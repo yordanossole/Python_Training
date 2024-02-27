@@ -104,10 +104,58 @@ checkWeird(n)
 7. Write a program that takes three numeric values from STDIN and checks if these three
 numeric values can be valid sides of a triangle.
 """
+
+"""
+Triangle Inequality Theorem: This theorem states that the sum of any two sides of a 
+triangle must be greater than the third side. If this condition holds true for all 
+three combinations of side lengths, then you have a valid triangle. You can express 
+the theorem as inequalities:
+(a + b > c)
+(a + c > b)
+(b + c > a)
+"""
+a = int(input("Enter the first side: "))
+b = int(input("Enter the second side: "))
+c = int(input("Enter the third side: "))
+
+if (a + b > c) and (a + c > b) and (b + c > a):
+    print(f"The three values{a,b,c} are valid sides of a triangle.")
+else:
+    print(f"The three values{a,b,c} are invalid sides.")
+
+
 """
 8. Write a program that takes a numeric score of a student out of 100 from STDIN and
 assigns a letter grade for the given score.
 """
+
+name = input("Enter your name: ")
+score = float(input("Enter your score: "))
+grade = None
+if score >= 90:
+    grade = 'A+'
+elif score >= 83:
+    grade = 'A'
+elif score >= 80:
+    grade = 'A-'
+elif score >= 75:
+    grade = 'B+'
+elif score >=68:
+    grade = 'B'
+elif score >= 65:
+    grade = 'B-'
+elif score >= 60:
+    grade = 'C+'
+elif score >= 50:
+    grade = 'C'
+elif score >= 45:
+    grade = 'C-'
+elif score >= 40:
+    grade = 'D'
+else:
+    grade = 'F'
+
+print(name, "Your grade is", grade)
 
 """
 9. Write a program to read two strings from STDIN and print the two lines where:
