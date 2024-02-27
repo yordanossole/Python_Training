@@ -108,6 +108,7 @@ numeric values can be valid sides of a triangle.
 8. Write a program that takes a numeric score of a student out of 100 from STDIN and
 assigns a letter grade for the given score.
 """
+
 """
 9. Write a program to read two strings from STDIN and print the two lines where:
 A. The first line contains the concatenation of the two strings (first followed by second).
