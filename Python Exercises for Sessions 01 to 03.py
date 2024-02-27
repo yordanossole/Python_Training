@@ -52,6 +52,11 @@ print(type(name))
 return a new string.
 """
 
+string = input("Enter the original string: ")
+n = int(input("Enter the value: "))
+newStr = string[n:]
+print(f"The new string after removing characters up to index {n} is: {newStr}")
+
 """
 5. Given two integer numbers return their product only if the product is equal to or lower
 than 1000, else return their sum.
