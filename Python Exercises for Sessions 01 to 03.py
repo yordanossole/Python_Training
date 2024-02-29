@@ -7,8 +7,8 @@ D. The output of an integer division (first divided by second).
 E. The output of the division (first divided by second).
 """
 
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
 
 nSum = num1 + num2
 nDifferece = num1 - num2
