@@ -42,9 +42,9 @@ num = 10
 print(num)
 print(type(num))
 
-name = "Yordanos"
-print(name)
-print(type(name))
+num = "Yordanos"
+print(num)
+print(type(num))
 
 
 """
