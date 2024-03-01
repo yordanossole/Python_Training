@@ -67,10 +67,10 @@ def result(num1, num2):
     product = num1 * num2
     SUM = num1 + num2
     if product <= 1000:
-        return print("Product: ", product)
+        print("Product: ", product)
     else:
-        return print("Sum: ", SUM)
-    
+        print("Sum: ", SUM)
+            
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 result(num1, num2)
@@ -91,16 +91,16 @@ def checkEven(n):
         return False
         
 def checkWeird(n):
-    if checkEven(n):
+    if not checkEven(n):
         print("Weird")
-    elif checkEven(n) and n>=2 and n<=5:
+    elif n>=2 and n<=5:
         print("Not weird")
-    elif checkEven(n) and n>=6 and n<=20:
+    elif n>=6 and n<=20:
         print("Weird")
-    elif checkEven(n) and n>20:
+    elif n>20:
         print("Not weird")
     else:
-        print("Odd")
+        print("It is -ve even")
 
 n = int(input("Enter a number: "))
 checkWeird(n)
