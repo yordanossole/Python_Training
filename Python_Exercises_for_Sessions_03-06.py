@@ -96,6 +96,70 @@ age = int(input("Enter your age: "))
 nameAge(name, age)
 
 '''
+11. Write a program to create function which accepts a variable length of 
+arguments and print their value.
+'''
+def varArg(*arg):
+    size = len(arg)
+    for i in range(0,size):
+        print(arg[i])            
+        
+varArg('a', 1)
+varArg(8, 5, 7, 8)
+varArg('yes it works')
+#Or
+def varArg(*arg):
+    size = len(arg)
+    for item in arg:
+        print(item)  
+         
+varArg('a', 1)
+varArg(8, 5, 7, 8)
+varArg('yes it works')
 
 '''
+12. Write a program to create function calculation() such that it can 
+accept two variables and calculate addition and subtraction. Also, it 
+must return both addition and subtraction in a single return call.
+'''
+def calculation(x, y):
+    SUM = x + y
+    difference = x - y
+    return SUM, difference
+#The function returns tuple    
+result = calculation(4, 3)
+print(result)
+#Or
+add, difference = calculation(4, 3)
+print(add)
+print(difference)
+print(calculation(4, 3))
 
+'''
+13. Write a program to create a function show_employee() using the 
+following conditions.
+> It should accept the employee’s name and salary and display 
+both.
+> If the salary is missing in the function call then assign default 
+value 9000 to salary
+'''
+def show_employee(name, salary = 9000): 
+    print("Name: ", name, '\n', "Salary: ", salary)
+
+name = input("Enter your name: ")
+try:
+    salary = float(input("Enter your salary: "))
+    show_employee(name, salary)
+except:
+    show_employee(name)
+'''
+14. Write a program to create a recursive function to calculate the sum 
+of numbers from 0 to 10.
+'''
+def sumUpToN(N):
+    if num == 1:
+        return 1
+    else:
+        return num + sumUpToN(N-1)
+
+print(sumUpToN(3)) #6
